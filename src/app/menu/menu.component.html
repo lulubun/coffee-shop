@@ -1,0 +1,10 @@
+<ul>
+    <li><button (click)="addCoffee()" >{{coffee}}</button></li>
+    <li><button (click)="addTea()" >{{tea}}</button></li>
+    <li><button (click)="addLatte()" >{{latte}}</button></li>
+  </ul>
+  <label>Instructions</label>
+  <input type="text" [(ngModel)]="instructions">
+  <p>{{instructions}}</p>
+  <app-order [orders]="orders"></app-order>
+  <button (click)="clearAll()">Submit</button>
